@@ -1,0 +1,8 @@
+flask
+flask_sqlalchemy
+matplotlib
+numpy
+scipy
+tables
+pandas
+ipympl

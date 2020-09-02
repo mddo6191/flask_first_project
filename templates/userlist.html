@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+    {% for item in userlist %}
+      <tr>
+        <td><input type="checkbox" value="{{ item.id }}" /></td>
+        <td>{{ item.username }}</td>
+        <td><a href="/user/{{ item.id }}">{{item.email }}</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock content %}
