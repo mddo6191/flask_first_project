@@ -1,4 +1,3 @@
-FROM ubuntu:14.04
 FROM python:3
 
 WORKDIR /first_project
