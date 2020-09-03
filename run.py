@@ -147,7 +147,7 @@ def logout():
 @app.route('/os')
 def os():
     return str(platform.system())
-
+git r
 
 if __name__ == '__main__':
     db.create_all()
