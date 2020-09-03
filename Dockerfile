@@ -1,8 +1,8 @@
 FROM python:3
 
-WORKDIR /first_project
+WORKDIR /flask_first_project
 
-COPY . /first_project
+COPY . /flask_first_project
 
 RUN pip install -r setup.txt
 
