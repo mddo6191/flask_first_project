@@ -1,10 +1,15 @@
 FROM python:3
 
-WORKDIR /flask_first_project
+#create app directory
+WORKDIR /app
 
-COPY . /flask_first_project
+#install app dependencies
+COPY src/requirements.txt ./
 
-RUN pip install -r setup.txt
+RUN pip install -r requirements.txt
+
+#bundle app source
+COPY src /app
 
 ENTRYPOINT ["python"]
 
