@@ -8,4 +8,4 @@ RUN pip install -r setup.txt
 
 ENTRYPOINT ["python"]
 
-CMD ["run.py"]dock
+CMD ["run.py"]
