@@ -143,11 +143,6 @@ def logout():
     session.pop("email",None)
     return redirect(url_for("login"))
 
-
-@app.route('/os')
-def os():
-    return str(platform.system())
-
 if __name__ == '__main__':
     db.create_all()
     app.run(host='35.180.197.201', debug=True)
