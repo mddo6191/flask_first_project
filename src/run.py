@@ -138,7 +138,6 @@ def user_list():
 @app.route("/os")
 def os_name():
     """Docstring"""
-    """ check it out """
     return (str(os.template))
 
     
