@@ -135,10 +135,6 @@ def user_list():
     userlist = User.query.filter_by().all()
     return render_template("userlist.html", userlist=userlist)
 
-@app.route("/os")
-def os_name():
-    """Docstring"""
-    return (str(os.template))
 
     
 @app.route('/logout')
