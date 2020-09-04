@@ -2,7 +2,7 @@
 from datetime import datetime, timedelta
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, render_template, redirect, url_for, request, session, flash
-import platform
+import os
 
 app = Flask(__name__)
 
@@ -149,4 +149,4 @@ def logout():
 
 if __name__ == '__main__':
     db.create_all()
-    app.run(host='172.31.26.206', debug=True)
+    app.run(host='0.0.0.0', debug=True, port=5000)
