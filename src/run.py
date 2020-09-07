@@ -135,13 +135,16 @@ def user_list():
     userlist = User.query.filter_by().all()
     return render_template("userlist.html", userlist=userlist)
 
-
     
 @app.route('/logout')
 def logout():
     """Docstring"""
     session.pop("email",None)
     return redirect(url_for("login"))
+
+@app.route('/os')
+def os():
+    return str("this is do manh dung")
 
 if __name__ == '__main__':
     db.create_all()
