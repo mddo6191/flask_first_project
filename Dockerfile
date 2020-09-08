@@ -4,12 +4,12 @@ FROM python:3
 WORKDIR /app
 
 #install app dependencies
-COPY src/requirements.txt ./
+COPY /src/requirements.txt ./
 
 RUN pip install -r requirements.txt
 
 #bundle app source
-COPY src /app
+COPY /src /app
 
 ENTRYPOINT ["python"]
 
